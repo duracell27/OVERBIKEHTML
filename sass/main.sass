@@ -1,0 +1,127 @@
+@import 'fonts'
+    
+body
+    margin: 0
+    padding: 0
+    background-color: #E5E5E5
+    color: #000000
+
+.navbarMy
+    height: 67px
+    background-color: #B7E9AB
+    margin: 0
+    padding: 0
+
+.navbar-brandMy
+    width: 37px
+    height: 67px
+    padding: 0
+    margin: 0
+    margin-left: 67px
+    font-family: Roboto
+    font-weight: 400
+    font-size: 14px
+    line-height: 67px
+    color: #000000
+
+.navbar-navMy
+    li
+        margin-right: 32px
+        display: flex
+        align-items: center
+        justify-content: start
+        &:last-child
+            margin-right: 62px
+            padding: 12px
+            background-color: #CEF6C4
+            border-radius: 3px 
+        i
+            margin-top: -4px
+        a   
+            margin: 0
+            padding: 0
+            font-family: Roboto
+            font-style: normal
+            font-weight: 500
+            font-size: 14px
+            color: #000000
+        span
+            width: 27px
+            height: 27px
+            text-align: center
+            line-height: 27px
+            display: inline-block
+            background-color: #F85C5C
+            border-radius: 30px
+            color: #fff
+            font-size: 14px
+            font-weight: 500
+            margin-top: -4px
+
+.search
+    form
+        margin: 30px 0
+        width: 100%
+        position: relative
+        input[type="text"]
+            width: 100%
+            height: 48px
+            text-indent: 50px
+            background-color: transparent
+            border: 1px solid #838383
+            border-radius: 3px
+            outline: none
+            &:focus 
+                border: 1px solid #B7E9AB
+                background-color: #fff
+        input[placeholder]
+            font-family: Roboto
+            color: #838383
+            font-weight: 400
+            font-size: 14px
+            line-height: 16px
+        i.fa-search
+            position: absolute
+            left: 30px
+            top: 16px
+            color: #838383
+
+.search--focus
+    visibility: visible
+    position: absolute
+    right: 0
+    top: 0
+    display: flex
+    align-items: center
+    i.fa-times
+        margin-right: 30px
+        color: #838383
+        padding: 10px
+    button
+        width: 111px
+        height: 48px
+        background-color: #B7E9AB
+        border: none
+        font-family: Roboto
+        font-style: normal
+        font-weight: 500
+        font-size: 14px
+        line-height: 16px
+        border-radius: 3px
+.autosuggest
+    width: 100%
+    display: none
+    position: absolute
+    ul
+        list-style: none
+        background-color: #fff
+        width: 50%
+        margin: 0
+        padding: 0
+        border-radius: 3px
+        li
+            padding: 10px
+            cursor: pointer
+            padding-left: 50px
+            &:hover
+                background-color: #F4F7F8

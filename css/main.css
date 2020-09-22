@@ -155,7 +155,8 @@ body {
 .autosuggest {
   width: 100%;
   display: none;
-  position: absolute; }
+  position: absolute;
+  z-index: 1; }
   .autosuggest ul {
     list-style: none;
     background-color: #fff;
@@ -168,6 +169,44 @@ body {
       cursor: pointer;
       padding-left: 50px; }
       .autosuggest ul li:hover {
+        background-color: #F4F7F8; }
+
+.autosuggestprice {
+  width: 60px;
+  display: none;
+  position: absolute;
+  z-index: 1; }
+  .autosuggestprice ul {
+    list-style: none;
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px; }
+    .autosuggestprice ul li {
+      padding: 10px;
+      cursor: pointer;
+      padding-left: 10px; }
+      .autosuggestprice ul li:hover {
+        background-color: #F4F7F8; }
+
+.autosuggestgeoposition {
+  width: 190px;
+  display: none;
+  position: absolute;
+  z-index: 1; }
+  .autosuggestgeoposition ul {
+    list-style: none;
+    background-color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 3px; }
+    .autosuggestgeoposition ul li {
+      padding: 10px;
+      cursor: pointer;
+      padding-left: 10px; }
+      .autosuggestgeoposition ul li:hover {
         background-color: #F4F7F8; }
 
 .custom-checkbox:checked + label {

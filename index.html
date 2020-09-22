@@ -44,7 +44,8 @@
         <div class="container">
             <div class="row">
                 <form>
-                    <input type="text" name="search" id="search" placeholder="Пошук велосипеда за назвою" autocomplete="off">
+                    <input type="text" name="search" id="search" placeholder="Пошук велосипеда за назвою"
+                        autocomplete="off">
                     <i class="fas fa-search"></i>
                     <div class="search--focus">
                         <i class="fas fa-times"></i>
@@ -63,14 +64,100 @@
     </section>
 
     <section class="filter">
-        
+        <div class="container">
+            <h2>Фільтри</h2>
+            <div class="wrapper">
+                <div class="row">
+                    <div class="col">
+                        <div class="condition">
+                            <input type="radio" class="custom-checkbox" checked id="all" name="sort" value="all">
+                            <label for="all">Всі</label>
+                            <input type="radio" class="custom-checkbox" id="used" name="sort" value="used">
+                            <label for="used">Б/В</label>
+                            <input type="radio" class="custom-checkbox" id="new" name="sort" value="new">
+                            <label for="new">Нові</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="filters">
+                            <div class="bicycletype">
+                                <label for="bicycletype">Тип велосипеда</label>
+                                <div class="selecttype">
+                                    <input class="selecttype__input" type="hidden" name="">
+                                    <div class="selecttype__head">Всі типи</div>
+                                    <ul class="selecttype__list" style="display: none;">
+                                        <li class="selecttype__item">Хардтейл</li>
+                                        <li class="selecttype__item">Двопідвіс</li>
+                                        <li class="selecttype__item">Дорожній</li>
+                                        <li class="selecttype__item">Шосейний</li>
+                                        <li class="selecttype__item">Дитячий</li>
+                                        <li class="selecttype__item">BMX / Trial</li>
+                                    </ul>
+                                </div>
+                                <!-- <select name="bicycletype" id="bicycletype">
+                                    <option selected value="all">Всі типи</option>
+                                    <option value="hardtail">Хардтейл</option>
+                                    <option value="suspension">Двопідвіс</option>
+                                    <option value="road">Дорожній</option>
+                                    <option value="highway">Шосейний</option>
+                                    <option value="kid">Дитячий</option>
+                                    <option value="bmx">BMX / Trial</option>
+                                </select> -->
+                            </div>
+                            <div class="bicyclesize">
+                                <label for="bicycletype">Розмір велосипеда</label>
+                                <div class="selectsize">
+                                    <input class="selectsize__input" type="hidden" name="">
+                                    <div class="selectsize__head">Всі розміри</div>
+                                    <ul class="selectsize__list" style="display: none;">
+                                        <li class="selectsize__item"><p>XS</p> <span>Ріст 140 - 155 см</span></li>
+                                        <li class="selectsize__item"><p>S</p> <span>Ріст 140 - 155 см</li>
+                                        <li class="selectsize__item"><p>M</p> <span>Ріст 140 - 155 см</span></li>
+                                        <li class="selectsize__item"><p>L</p> <span>Ріст 140 - 155 см</span></li>
+                                        <li class="selectsize__item"><p>XL</p> <span>Ріст 140 - 155 см</span></li>
+                                        <li class="selectsize__item"><p>XXL</p> <span>Ріст 140 - 155 см</span></li>
+                                    </ul>
+                                </div>
+                                <!-- <select name="bicyclesize" id="bicyclesize">
+                                    <option selected value="all">Всі розміри</option>
+                                    <option value="XS">XS <span>Ріст 140 - 155 см</span></option>
+                                    <option value="S">S <span>Ріст 140 - 155 см</span></option>
+                                    <option value="M">M <span>Ріст 140 - 155 см</span></option>
+                                    <option value="L">L <span>Ріст 140 - 155 см</span></option>
+                                    <option value="XL">XL <span>Ріст 140 - 155 см</span></option>
+                                    <option value="XXL">XXL <span>Ріст 140 - 155 см</span></option>
+                                </select> -->
+                            </div>
+                            <div class="bicycleprice">
+                                <label for="bicycleprice">Ціна велосипеда (грн)</label>
+                                <input id="bicycleprice" type="text" placeholder="Від">
+                                <input  type="text" placeholder="До">
+                            </div>
+                            <div class="bicyclegeoposition">
+                                <label for="bicyclegeoposition">Де шукаємо?</label>
+                                <input id="bicyclegeoposition" type="text" placeholder="Вся Україна">
+                            </div>
+                            <div class="searchbutton">
+                                <button>Показати результати</button>
+                                <span>Результатів дохуя</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </section>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://kit.fontawesome.com/ef4238892f.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

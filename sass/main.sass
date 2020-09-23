@@ -57,8 +57,61 @@ body
             font-size: 14px
             font-weight: 500
             margin-top: -4px
-
+.profileInfo
+    display: none
+    position: absolute
+    top: 0
+    width: 210px
+    border-radius: 3px
+    margin-top: 50px
+    margin-left: -50px
+    background-color: #fff
+    box-shadow: 10px 10px 39px -19px rgba(0,0,0,0.35)
+    &.active
+        display: block
+    ul
+        margin: 0
+        padding: 0
+        li
+            margin-right: 0
+            padding: 7px 15px
+            img
+                width: 30px
+                height: 30px
+                border-radius: 50%
+                
+            p
+                width: 100%
+                margin-left: 10px
+                margin-bottom: 0
+                font-family: Roboto
+                font-weight: 500
+                font-size: 14px
+                line-height: 16px
+                color: #000000
+                span
+                    text-align: left
+                    height: 14px
+                    margin: 0
+                    padding: 0
+                    margin-bottom: 3px
+                    display: block
+                    width: 100%
+                    background-color: transparent
+                    font-family: Roboto
+                    font-weight: 400
+                    font-size: 10px
+                    line-height: 12px
+                    color: #434343
+            &:first-child
+                border-bottom: 1px solid #000
+            &:last-child
+                background-color: #fff
+                margin-right: 0
+                padding-left: 15px
+                padding-top: 7px
 .search
+    margin-top: 97px
     form
         margin: 30px 0
         width: 100%
@@ -439,6 +492,7 @@ body
         a
             text-decoration: none
         &--item
+            position: relative
             p   
                 margin-top: 8px
                 margin-bottom: 0
@@ -451,6 +505,37 @@ body
             img
                 height: 120px
                 width: 120px
+                    
+            .info
+                position: absolute
+                display: none
+                top: -330px
+                left: -63%
+                width: 270px
+                height: 320px
+                background-color: #fff
+                padding: 20px
+                font-family: Roboto
+                font-weight: 400
+                font-size: 14px
+                line-height: 16px
+                transition: opacity .5s
+                &.active
+                    display: block
+                &::after
+                    content: ''
+                    width: 10px
+                    height: 10px
+                    background-color: white
+                    display: block
+                    transform: rotate(45deg)
+                    position: absolute
+                    left: 50%
+                    margin-left: -5px
+                    bottom: -5px
+                img
+                    width: 100%
+                    height: auto
 
 .bicycle
     margin-top: 40px

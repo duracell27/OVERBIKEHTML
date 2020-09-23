@@ -205,6 +205,7 @@ body
 .filters
     display: flex
     justify-content: space-between
+    flex-wrap: wrap
     margin-top: 20px
     label
         display: block
@@ -423,3 +424,106 @@ body
                 color: #838383
             &:hover
                 background-color: rgba(224, 229, 231, 0.5)
+
+.types
+    margin-top: 40px
+    h2
+        font-family: Roboto
+        font-size: 20px
+        font-weight: 700
+        color: #838383
+    &__cards
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        a
+            text-decoration: none
+        &--item
+            p   
+                margin-top: 8px
+                margin-bottom: 0
+                font-family: Roboto
+                font-weight: 400
+                font-size: 16px
+                line-height: 19px
+                text-align: center
+                color: #000000
+            img
+                height: 120px
+                width: 120px
+
+.bicycle
+    margin-top: 40px
+    h2
+        font-family: Roboto
+        font-size: 20px
+        font-weight: 700
+        color: #838383
+    .geolike
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 30px
+        margin-bottom: 5px
+        padding: 0px 10px
+        i.fa-heart
+            color: #989898
+        p
+            font-family: Roboto
+            font-weight: 400
+            font-size: 14px
+            line-height: 16px
+            color: #000000
+            margin-bottom: 0
+            margin-top: 0
+            span
+                display: block
+                font-weight: 500
+.bicyclecards
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__item
+        width: 255px
+        min-width: 255px
+        padding: 10px
+        border-radius: 3px
+        background-color: #fff
+        
+        img
+            width: 100%
+            height: auto
+        p
+            font-family: Roboto
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            color: #000000
+            margin-top: 10px
+            margin-bottom: 10px
+        &--tags
+            ul
+                margin: 0
+                padding: 0
+                display: flex
+                list-style: none
+                li
+                    font-family: Roboto
+                    margin-right: 10px
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 16px
+                    color: #000000
+                    padding: 3px 10px
+                    border-radius: 10px
+                    background-color: #EEEEEE
+
+.borderbox
+    max-width: 259px
+    position: relative
+    background: white
+    padding: 2px
+    border-radius: 3px
+    margin-bottom: 30px
+    &.vip
+        background: linear-gradient(225deg, rgba(11,212,93,1) 0%, rgba(255,248,87,1) 30%, rgba(210,102,249,1) 100%)

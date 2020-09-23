@@ -254,6 +254,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 20px; }
   .filters label {
     display: block;
@@ -471,3 +473,122 @@ body {
       color: #838383; }
     .bicyclesize .selectsize__list .selectsize__item:hover {
       background-color: rgba(224, 229, 231, 0.5); }
+
+.types {
+  margin-top: 40px; }
+  .types h2 {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    color: #838383; }
+  .types__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .types__cards a {
+      text-decoration: none; }
+    .types__cards--item p {
+      margin-top: 8px;
+      margin-bottom: 0;
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #000000; }
+    .types__cards--item img {
+      height: 120px;
+      width: 120px; }
+
+.bicycle {
+  margin-top: 40px; }
+  .bicycle h2 {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    color: #838383; }
+  .bicycle .geolike {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    padding: 0px 10px; }
+    .bicycle .geolike i.fa-heart {
+      color: #989898; }
+    .bicycle .geolike p {
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+      margin-bottom: 0;
+      margin-top: 0; }
+      .bicycle .geolike p span {
+        display: block;
+        font-weight: 500; }
+
+.bicyclecards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .bicyclecards__item {
+    width: 255px;
+    min-width: 255px;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #fff; }
+    .bicyclecards__item img {
+      width: 100%;
+      height: auto; }
+    .bicyclecards__item p {
+      font-family: Roboto;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .bicyclecards__item--tags ul {
+      margin: 0;
+      padding: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      list-style: none; }
+      .bicyclecards__item--tags ul li {
+        font-family: Roboto;
+        margin-right: 10px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #000000;
+        padding: 3px 10px;
+        border-radius: 10px;
+        background-color: #EEEEEE; }
+
+.borderbox {
+  max-width: 259px;
+  position: relative;
+  background: white;
+  padding: 2px;
+  border-radius: 3px;
+  margin-bottom: 30px; }
+  .borderbox.vip {
+    background: linear-gradient(225deg, #0bd45d 0%, #fff857 30%, #d266f9 100%); }

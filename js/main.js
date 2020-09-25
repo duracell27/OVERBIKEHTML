@@ -60,7 +60,7 @@ $(document).ready(function () {
         margin: 10,
         nav: true,
         dots: true,
-        navText: ["<img src='../img/sliderarrowleft.png'>","<img src='../img/sliderarrowright.png'>"],
+        navText: ["<img src='../img/sliderarrowleft.png'>", "<img src='../img/sliderarrowright.png'>"],
         dotsData: true,
         responsive: {
             0: {
@@ -74,5 +74,28 @@ $(document).ready(function () {
             }
         }
     });
+});
+
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+    slidesPerView: 8,
+    spaceBetween: 10,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+});
+var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 10,
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+        swiper: galleryThumbs,
+    },
 });
 

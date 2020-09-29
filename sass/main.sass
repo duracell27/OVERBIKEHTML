@@ -829,10 +829,88 @@ body
 
 .wrapperproductinfo
     padding: 20px
+    
+
+.wrapperviolet
+    margin-top: 20px
+    background-color: #73577C
+    border-radius: 3px
+    form
+        position: relative
+        input[type='text']
+            background: #F8F8F8
+            border: 1px solid #EEEEEE
+            box-sizing: border-box
+            border-radius: 3px
+            width: 100%
+            padding: 9px 10px
+            max-height: 48px
+            position: relative
+            outline: none
+            resize: none
+            &::-webkit-input-placeholder
+                font-family: Roboto
+                font-weight: 400
+                font-size: 16px
+                line-height: 16px
+                color: #000  
+        button
+            position: absolute
+            right: 15px
+            top: 8px
+            background-color: transparent
+            outline: none
+            cursor: pointer
+            border: none
+            padding: 0
+            i
+                cursor: pointer
+                font-size: 27px
+                transform: rotate(33deg)
+                color: #A366B8
+    .writemessage
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 20px
+        color: #fff
+        .user
+            width: 300px
+            cursor: pointer
+            img
+                width: 43px
+                height: 43px
+                border-radius: 50%
+                display: inline-block
+                margin-right: 10px
+            p
+                display: inline-block
+                margin-bottom: 0px
+                font-family: Roboto
+                font-weight: 400
+                font-size: 24px
+                line-height: 28px
+                color: #fff
+            span
+                display: block
+                margin-left: 60px
+                margin-top: -11px
+                font-family: Roboto
+                font-weight: normal
+                font-size: 14px
+                line-height: 16px
+                color: #fff
+        .phone
+            p
+                font-family: Roboto
+                font-weight: 400
+                font-size: 24px
+                line-height: 28px
+                color: #fff
 
 .bigslider
     margin-top: 67px
-    padding: 140px
+    padding: 140px 250px
     padding-top: 40px
     background-color: #413545
     .pagetitlewrapper
@@ -843,14 +921,15 @@ body
         font-size: 24px
         line-height: 28px
         color: #FFFFFF
+        .closebycycle
+            cursor: pointer
+            color: #C4C4C4
         p
             margin: 0
         p.price
             display: flex
-
             align-items: center
             font-weight: 500
-        
             margin-top: 3px
             span
                 cursor: pointer

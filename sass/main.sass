@@ -236,8 +236,6 @@ body
             border: 1px solid #EEEEEE
             border-radius: 3px
             padding-left: -5px
-            input[type="radio"] 
-                display: absolute
             input[type="radio"]
                 position: absolute
                 opacity: 0
@@ -771,6 +769,9 @@ body
             position: relative
             outline: none
             resize: none
+            &:focus
+                &::-webkit-input-placeholder
+                    color: #fff
             &::-webkit-input-placeholder
                 font-family: Roboto
                 font-weight: 400
@@ -852,6 +853,9 @@ body
             position: relative
             outline: none
             resize: none
+            &:focus
+                &::-webkit-input-placeholder
+                    color: #fff
             &::-webkit-input-placeholder
                 font-family: Roboto
                 font-weight: 400
@@ -1016,3 +1020,182 @@ body
             color: #000000
             margin-bottom: 0
 
+.createtypes
+    display: inline-block
+    border-radius: 3px
+    padding-left: -5px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    input[type="radio"]
+        position: absolute
+        opacity: 0
+        &:checked + label
+            img
+                border: 5px solid #B7E9AB
+                border-radius: 5px
+                margin: 0
+    label
+        box-sizing: padding-box
+        width: 120px
+        display: inline-block
+        margin: 0
+        padding: 0
+        background-color: transparent
+        cursor: pointer
+        img
+            width: 100%
+            margin: 5px
+        p
+            text-align: center
+    .create-custom-checkbox
+        background-color: #fff
+.createmain
+    .inputPart
+        label.simple,h2
+            font-family: Roboto
+            font-weight: 400
+            font-size: 14px
+            line-height: 16px
+            color: #000000
+            display: block
+        input[type='text']
+            background-color: #fff
+            border-radius: 3px
+            height: 40px
+            border: 1px solid #eee 
+            margin-bottom: 37px
+            outline: none
+            color: #000000
+            padding-left: 10px
+            width: 240px
+            &::-webkit-input-placeholder
+                font-family: Roboto
+                font-weight: 400
+                font-size: 14px
+                line-height: 16px
+                color: #000
+            &:focus
+                &::-webkit-input-placeholder
+                    color: #fff
+        textarea
+            width: 520px
+            height: 140px
+            resize: none
+            outline: none
+            color: #000000
+            padding-top: 7px
+            padding-left: 10px
+            margin-bottom: 37px
+            &::-webkit-input-placeholder
+                font-family: Roboto
+                font-weight: 400
+                font-size: 14px
+                line-height: 16px
+                color: #000
+            &:focus
+                &::-webkit-input-placeholder
+                    color: #fff
+
+
+        .createcondition
+            display: inline-block
+            border-radius: 3px
+            padding-left: -5px
+            input[type="radio"]
+                position: absolute
+                opacity: 0
+                &:checked + label
+                    background-color: #B7E9AB
+                    border-radius: 3px
+            label
+                display: inline-block
+                width: 115px
+                margin: 0
+                text-align: center
+                padding: 8px 12px
+                margin-right: 10px
+                margin-bottom: 37px
+                background-color: #F8F8F8
+                border-radius: 3px
+                cursor: pointer
+        input[type='file']
+            width: 180px
+            height: 130px
+            margin: 5px
+            outline: none
+            overflow: hidden
+            
+        .custom-file-input1
+            &::-webkit-file-upload-button
+                visibility: hidden
+            &::before
+                width: 180px
+                height: 130px
+                content: 'Натисніть, щоб \0a додати головне \0a фото'
+                display: inline-block
+                background: #B7E9AB
+                border-radius: 3px
+                padding: 5px 8px
+                outline: none
+                white-space: pre
+                -webkit-user-select: none
+                text-align: center
+                font-style: 14px
+                line-height: 16px
+                cursor: pointer
+                color: #000
+                padding-top: 40px
+            &:hover::before
+                border-color: black
+            &:active::before
+                background: #B7E9AB
+
+        .custom-file-input2
+            &::-webkit-file-upload-button
+                visibility: hidden
+            &::before
+                width: 180px
+                height: 130px
+                display: inline-block
+                background: #EEEEEE
+                border-radius: 3px
+                padding: 5px 8px
+                outline: none
+                text-align: center
+                line-height: 130px
+                white-space: pre
+                -webkit-user-select: none
+                cursor: pointer
+                font-family: "Font Awesome 5 Free"
+                font-weight: 900
+                content: '\f030'
+                font-size: 33px
+                color: #838383
+    .nextButton
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 37px
+        button
+            width: 167px
+            height: 40px
+            background-color: transparent
+            cursor: pointer
+            outline: none
+            text-align: center
+            line-height: 40px
+            font-family: Roboto
+            font-weight: 500
+            font-size: 14px
+            border: none
+            border-radius: 3px
+            
+        button.next
+            background-color: #B7E9AB
+
+.blat
+    max-width: 760px
+    display: flex
+    justify-content: start
+    flex-wrap: wrap

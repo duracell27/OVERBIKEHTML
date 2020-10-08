@@ -284,8 +284,6 @@ body {
     border-radius: 3px;
     padding-left: -5px; }
     .filter .wrapper .condition input[type="radio"] {
-      display: absolute; }
-    .filter .wrapper .condition input[type="radio"] {
       position: absolute;
       opacity: 0; }
       .filter .wrapper .condition input[type="radio"]:checked + label {
@@ -846,6 +844,8 @@ body {
       position: relative;
       outline: none;
       resize: none; }
+      .bigproductcard form input[type='text']:focus::-webkit-input-placeholder {
+        color: #fff; }
       .bigproductcard form input[type='text']::-webkit-input-placeholder {
         font-family: Roboto;
         font-weight: 400;
@@ -933,6 +933,8 @@ body {
       position: relative;
       outline: none;
       resize: none; }
+      .wrapperviolet form input[type='text']:focus::-webkit-input-placeholder {
+        color: #fff; }
       .wrapperviolet form input[type='text']::-webkit-input-placeholder {
         font-family: Roboto;
         font-weight: 400;
@@ -1102,3 +1104,190 @@ body {
     line-height: 28px;
     color: #000000;
     margin-bottom: 0; }
+
+.createtypes {
+  display: inline-block;
+  border-radius: 3px;
+  padding-left: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .createtypes input[type="radio"] {
+    position: absolute;
+    opacity: 0; }
+    .createtypes input[type="radio"]:checked + label img {
+      border: 5px solid #B7E9AB;
+      border-radius: 5px;
+      margin: 0; }
+  .createtypes label {
+    -webkit-box-sizing: padding-box;
+            box-sizing: padding-box;
+    width: 120px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer; }
+    .createtypes label img {
+      width: 100%;
+      margin: 5px; }
+    .createtypes label p {
+      text-align: center; }
+  .createtypes .create-custom-checkbox {
+    background-color: #fff; }
+
+.createmain .inputPart label.simple, .createmain .inputPart h2 {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  display: block; }
+.createmain .inputPart input[type='text'] {
+  background-color: #fff;
+  border-radius: 3px;
+  height: 40px;
+  border: 1px solid #eee;
+  margin-bottom: 37px;
+  outline: none;
+  color: #000000;
+  padding-left: 10px;
+  width: 240px; }
+  .createmain .inputPart input[type='text']::-webkit-input-placeholder {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000; }
+  .createmain .inputPart input[type='text']:focus::-webkit-input-placeholder {
+    color: #fff; }
+.createmain .inputPart textarea {
+  width: 520px;
+  height: 140px;
+  resize: none;
+  outline: none;
+  color: #000000;
+  padding-top: 7px;
+  padding-left: 10px;
+  margin-bottom: 37px; }
+  .createmain .inputPart textarea::-webkit-input-placeholder {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000; }
+  .createmain .inputPart textarea:focus::-webkit-input-placeholder {
+    color: #fff; }
+.createmain .inputPart .createcondition {
+  display: inline-block;
+  border-radius: 3px;
+  padding-left: -5px; }
+  .createmain .inputPart .createcondition input[type="radio"] {
+    position: absolute;
+    opacity: 0; }
+    .createmain .inputPart .createcondition input[type="radio"]:checked + label {
+      background-color: #B7E9AB;
+      border-radius: 3px; }
+  .createmain .inputPart .createcondition label {
+    display: inline-block;
+    width: 115px;
+    margin: 0;
+    text-align: center;
+    padding: 8px 12px;
+    margin-right: 10px;
+    margin-bottom: 37px;
+    background-color: #F8F8F8;
+    border-radius: 3px;
+    cursor: pointer; }
+.createmain .inputPart input[type='file'] {
+  width: 180px;
+  height: 130px;
+  margin: 5px;
+  outline: none;
+  overflow: hidden; }
+.createmain .inputPart .custom-file-input1::-webkit-file-upload-button {
+  visibility: hidden; }
+.createmain .inputPart .custom-file-input1::before {
+  width: 180px;
+  height: 130px;
+  content: "Натисніть, щоб \aдодати головне \aфото";
+  display: inline-block;
+  background: #B7E9AB;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: pre;
+  -webkit-user-select: none;
+  text-align: center;
+  font-style: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  color: #000;
+  padding-top: 40px; }
+.createmain .inputPart .custom-file-input1:hover::before {
+  border-color: black; }
+.createmain .inputPart .custom-file-input1:active::before {
+  background: #B7E9AB; }
+.createmain .inputPart .custom-file-input2::-webkit-file-upload-button {
+  visibility: hidden; }
+.createmain .inputPart .custom-file-input2::before {
+  width: 180px;
+  height: 130px;
+  display: inline-block;
+  background: #EEEEEE;
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  text-align: center;
+  line-height: 130px;
+  white-space: pre;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  font-size: 33px;
+  color: #838383; }
+.createmain .nextButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 37px; }
+  .createmain .nextButton button {
+    width: 167px;
+    height: 40px;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    line-height: 40px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px; }
+  .createmain .nextButton button.next {
+    background-color: #B7E9AB; }
+
+.blat {
+  max-width: 760px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }

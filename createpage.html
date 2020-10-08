@@ -26,7 +26,7 @@
                         <div class="profileInfo">
                             <ul>
                                 <li><img src="img/road.png" alt="profileInfo">
-                                <p><span>Вдалих покатушок!</span>Олексій Удовенко</p>
+                                    <p><span>Вдалих покатушок!</span>Олексій Удовенко</p>
                                 </li>
                                 <li>Мої оголошення</li>
                                 <li>Налаштування</li>
@@ -34,7 +34,7 @@
                             </ul>
                         </div>
                     </li>
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="#">ЛАЙКНУТІ </a>
                         <i class="far fa-heart"></i>
@@ -58,63 +58,131 @@
     <section class="types">
         <div class="container">
             <h2>Що продаєте</h2>
-            <div class="types__cards">
-                <a href="#" class="types__cards--item">
-                    <img src="img/hardtail.png" alt="types">
+            <div class="createtypes">
+                <input type="radio" class="create-custom-checkbox" checked id="hardtail" name="createtypes"
+                    value="hardtail">
+                <label for="hardtail"><img src="img/hardtail.png" alt="">
                     <p>Хардтейл</p>
-                    <div class="info">
-                        <img src="img/image 2.png" alt="info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium a, in natus cupiditate facere placeat rem culpa esse et vero omnis sequi qui itaque sed animi</p>
-                    </div>
-                </a>
-                <a href="#" class="types__cards--item">
-                    <img src="img/suspense.png" alt="types">
+                </label>
+
+                <input type="radio" class="create-custom-checkbox" id="suspense" name="createtypes" value="suspense">
+                <label for="suspense"><img src="img/suspense.png" alt="">
                     <p>Двопідвіс</p>
-                    <div class="info">
-                        <img src="img/image 2.png" alt="info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium a, in natus cupiditate facere placeat rem culpa esse et vero omnis sequi qui itaque sed animi</p>
-                    </div>
-                </a>
-                <a href="#" class="types__cards--item active">
-                    <img src="img/road.png" alt="types">
+                </label>
+
+                <input type="radio" class="create-custom-checkbox" id="road" name="createtypes" value="road">
+                <label for="road"><img src="img/road.png" alt="">
                     <p>Дорожній</p>
-                    <div class="info">
-                        <img src="img/image 2.png" alt="info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium a, in natus cupiditate facere placeat rem culpa esse et vero omnis sequi qui itaque sed animi</p>
-                    </div>
-                </a>
-                <a href="#" class="types__cards--item">
-                    <img src="img/highway.png" alt="types">
+                </label>
+
+                <input type="radio" class="create-custom-checkbox" id="highway" name="createtypes" value="highway">
+                <label for="highway"><img src="img/highway.png" alt="">
                     <p>Шосейний</p>
-                    <div class="info">
-                        <img src="img/image 2.png" alt="info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium a, in natus cupiditate facere placeat rem culpa esse et vero omnis sequi qui itaque sed animi</p>
-                    </div>
-                </a>
-                <a href="#" class="types__cards--item">
-                    <img src="img/kid.png" alt="types">
+                </label>
+
+                <input type="radio" class="create-custom-checkbox" id="bmx" name="createtypes" value="bmx">
+                <label for="bmx"><img src="img/bmx.png" alt="">
+                    <p>BMX / Trial</p>
+                </label>
+
+                <input type="radio" class="create-custom-checkbox" id="kid" name="createtypes" value="kid">
+                <label for="kid"><img src="img/kid.png" alt="">
                     <p>Дитячий</p>
-                    <div class="info">
-                        <img src="img/image 2.png" alt="info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium a, in natus cupiditate facere placeat rem culpa esse et vero omnis sequi qui itaque sed animi</p>
-                    </div>
-                </a>
-                <a href="#" class="types__cards--item">
-                    <img src="img/bmx.png" alt="types">
-                    <p>Bmx / Trial</p>
-                    <div class="info">
-                        <img src="img/image 2.png" alt="info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium a, in natus cupiditate facere placeat rem culpa esse et vero omnis sequi qui itaque sed animi</p>
-                    </div>
-                </a>
-                <a href="#" class="types__cards--item">
-                    <img src="img/parts.png" alt="types">
+                </label>
+
+                <input type="radio" class="create-custom-checkbox" id="parts" name="createtypes" value="parts">
+                <label for="parts"><img src="img/parts.png" alt="">
                     <p>Комплектуючі</p>
-                    <div class="info">
-                        <img src="img/image 2.png" alt="info">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus praesentium a, in natus cupiditate facere placeat rem culpa esse et vero omnis sequi qui itaque sed animi</p>
-                    </div>
-                </a>
+                </label>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="createmain">
+        <div class="container">
+            <div class="inputPart">
+                <label class="simple" for="header">Заголовок</label>
+                <input type="text" id="header" placeholder="Назва велосипеда">
+            </div>
+            <div class="inputPart">
+                <div class="createcondition">
+                    <h2>Стан велосипеда</h2>
+    
+                    <input type="radio" class="custom-checkbox" checked id="all" name="condition" value="all">
+                    <label for="all">Виберіть</label>
+    
+                    <input type="radio" class="custom-checkbox"  id="used" name="condition" value="used">
+                    <label for="used">Б/В</label>
+    
+                    <input type="radio" class="custom-checkbox" id="new" name="condition" value="new">
+                    <label for="new">Новий</label>
+                </div>
+            </div>
+            <div class="inputPart">
+                <label class="simple" for="price">Ціна (грн)</label>
+                <input type="text" id="price" placeholder="Вкажіть ціну">
+            </div>
+            <div class="inputPart">
+                <div class="createcondition">
+                    <h2>Стан велосипеда</h2>
+    
+                    <input type="radio" class="custom-checkbox" checked id="all1" name="size" value="all">
+                    <label for="all1">Виберіть</label>
+    
+                    <input type="radio" class="custom-checkbox"  id="xs" name="size" value="xs">
+                    <label for="xs">XS</label>
+    
+                    <input type="radio" class="custom-checkbox" id="s" name="size" value="s">
+                    <label for="s">S</label>
+    
+                    <input type="radio" class="custom-checkbox" id="m" name="size" value="m">
+                    <label for="m">M</label>
+    
+                    <input type="radio" class="custom-checkbox" id="l" name="size" value="l">
+                    <label for="l">L</label>
+    
+                    <input type="radio" class="custom-checkbox" id="xl" name="size" value="xl">
+                    <label for="xl">XL</label>
+    
+                    <input type="radio" class="custom-checkbox" id="xxl" name="size" value="xxl">
+                    <label for="xxl">XXL</label>
+                </div>
+            </div>
+            <div class="inputPart">
+                <label class="simple" for="description">Опис</label>
+                <textarea name="description" id="description" placeholder="Додайте опис" ></textarea>
+            </div>
+            <div class="inputPart">
+                <label class="simple" for="number">Додайте фото</label>
+                <div class="blat">
+                    
+                    <input class="custom-file-input1" type="file" id="number">
+                    <input class="custom-file-input2" type="file" id="number">
+                    <input class="custom-file-input2" type="file" id="number">
+                    <input class="custom-file-input2" type="file" id="number">
+                    <input class="custom-file-input2" type="file" id="number">
+                    <input class="custom-file-input2" type="file" id="number">
+                    <input class="custom-file-input2" type="file" id="number">
+                    <input class="custom-file-input2" type="file" id="number">
+                </div>
+                
+                
+            </div>
+            <div class="inputPart">
+                <label class="simple" for="location">Локація</label>
+                <input type="text" id="location" placeholder="Ваше місцезнаходження">
+            </div>
+            <div class="inputPart">
+                <label class="simple" for="number">Контактний номер телефону</label>
+                <input type="text" id="number" placeholder="Ваш номер телефону">
+            </div>
+            <div class="nextButton">
+                <div>
+                    <button>Скасувати</button>
+                    <button class="next">Далі</button>
+                </div>
+                <div>Попередній перегляд</div>
             </div>
         </div>
     </section>

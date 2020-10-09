@@ -1135,6 +1135,8 @@ body {
     background-color: transparent;
     cursor: pointer; }
     .createtypes label img {
+      -webkit-box-sizing: content-box;
+              box-sizing: content-box;
       width: 100%;
       margin: 5px; }
     .createtypes label p {
@@ -1167,6 +1169,19 @@ body {
     color: #000; }
   .createmain .inputPart input[type='text']:focus::-webkit-input-placeholder {
     color: #fff; }
+.createmain .inputPart .wrap {
+  position: relative;
+  display: inline-block; }
+  .createmain .inputPart .wrap .hint {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: -260px;
+    width: 250px;
+    padding: 15px;
+    background-color: #fff;
+    font-size: 11px; }
 .createmain .inputPart textarea {
   width: 520px;
   height: 140px;

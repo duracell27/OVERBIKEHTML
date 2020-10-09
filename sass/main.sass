@@ -1044,6 +1044,7 @@ body
         background-color: transparent
         cursor: pointer
         img
+            box-sizing: content-box
             width: 100%
             margin: 5px
         p
@@ -1078,6 +1079,19 @@ body
             &:focus
                 &::-webkit-input-placeholder
                     color: #fff
+        .wrap
+            position: relative
+            display: inline-block
+            .hint
+                display: none
+                position: absolute
+                top: 0
+                right: 0
+                margin-right: -260px
+                width: 250px
+                padding: 15px
+                background-color: #fff
+                font-size: 11px
         textarea
             width: 520px
             height: 140px

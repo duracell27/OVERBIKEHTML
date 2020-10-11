@@ -1092,6 +1092,24 @@ body
                 padding: 15px
                 background-color: #fff
                 font-size: 11px
+            .autosuggestion
+                width: 100%
+                background-color: #fff
+                top: 0
+                position: absolute
+                top: 40px
+                z-index: 10
+                border-radius: 3px
+                ul
+                    margin: 0
+                    padding: 0
+                    list-style: none
+                   
+                    li
+                        padding: 5px
+                        padding-left: 10px
+                        &:hover
+                            background-color: #eee
         textarea
             width: 520px
             height: 140px
@@ -1213,3 +1231,203 @@ body
     display: flex
     justify-content: start
     flex-wrap: wrap
+
+.vippayment
+    margin-top: 67px
+    h1
+        padding-top: 35px
+        margin-bottom: 44px
+        font-family: Roboto
+        font-weight: 400 
+        font-size: 24px
+        line-height: 28px
+        color: #000000
+    .topcards
+        display: inline-block
+        border-radius: 3px
+        padding-left: -5px
+        display: flex
+        justify-content: start
+        align-items: center
+        input[type="radio"]
+            position: absolute
+            opacity: 0
+            &:checked + label
+                padding: 2px
+                background-color: transparent
+                
+        label
+            box-sizing: padding-box
+            width: 124px
+            height: 124px
+            display: inline-block
+            margin: 0
+            padding: 0
+            background-color: #fff
+            cursor: pointer
+            border-radius: 3px
+        .create-custom-checkbox
+            background-color: #fff
+        .borderbox
+            max-width: 124px
+            height: 124px
+            position: relative
+            background: white
+            padding: 0px
+            border-radius: 3px
+            margin-bottom: 30px
+            margin-right: 20px
+            &.vip
+                background: linear-gradient(225deg, rgba(11,212,93,1) 0%, rgba(255,248,87,1) 30%, rgba(210,102,249,1) 100%)
+            .topcards__item
+                width: 120px
+                height: 120px
+                background-color: #fff
+                text-align: center
+                border-radius: 3px
+                h2
+                    font-family: Roboto
+                    font-weight: 500
+                    font-size: 40px
+                    line-height: 47px
+                    color: #000000
+                    margin: 0
+                    padding-top: 18px
+                p
+                    font-family: Roboto
+                    font-weight: 500
+                    font-size: 14px
+                    line-height: 16px
+                    color: #000000
+                    margin: 0
+                    padding: 0
+                    span
+                        display: block
+                        font-family: Roboto
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 16px
+                        color: #A366B8
+                        padding-bottom: 10px
+.debcards
+    &__item
+        display: block
+        position: relative
+        width: 240px
+        height: 40px
+        background-color: #fff
+        padding: 0 6px
+        margin: 10px 0 0
+
+        input[type='radio']
+            display: none
+
+        label
+            color: #666
+            width: 100%
+            font-weight: normal
+            padding: 6px 20px
+            font-family: Roboto
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+
+            &:before
+                content: " "
+                display: inline-block
+                position: relative
+                top: 5px
+                margin: 0 5px 0 0
+                width: 20px
+                height: 20px
+                border-radius: 11px
+                border: 2px solid #A366B8
+                background-color: transparent
+
+        input[type=radio]:checked + label:after
+            border-radius: 11px
+            width: 12px
+            height: 12px
+            position: absolute
+            top: 15px
+            left: 30px
+            content: " "
+            display: block
+            background: #A366B8
+    .addcard
+        margin-top: 10px
+        text-align-last: left
+        width: 240px
+        height: 40px
+        border: 1px solid #A366B8
+        outline: none
+        font-family: Roboto
+        font-weight: normal
+        font-size: 13px
+        line-height: 14px
+        color: #A366B8
+        i.fa-plus
+            margin-left: 23px
+            margin-right: 10px
+.total
+    margin-top: 77px
+    font-family: Roboto
+    span
+        font-weight: 500
+        font-size: 14px
+        line-height: 16px
+        text-align: center
+        color: #000000
+    h3
+        font-family: Roboto
+        font-weight: bold
+        font-size: 24px
+        line-height: 28px
+        color: #A366B8
+.buttons
+    button
+        width: 167px
+        height: 40px
+        outline: none
+        text-align: center
+        font-family: Roboto
+        font-weight: 500
+        font-size: 14px
+        line-height: 16px
+        text-align: center
+        color: #000
+        border-radius: 3px
+        border: none
+        margin-right: 20px
+        margin-bottom: 15px
+    .b1
+        background-color: transparent
+        width: 75px
+    .b2
+        background-color: transparent
+        border: 3px solid #B7E9AB
+    .b3
+        background-color: #B7E9AB
+.leftwrap
+    border: 1px solid #000000
+    border-radius: 5px
+    height: 360px
+    padding: 18px
+    padding-right: 60px
+    h2
+        font-family: Roboto
+        font-weight: 400 
+        font-size: 24px
+        line-height: 28px
+        color: #000000
+        margin-bottom: 22px
+    p
+        font-family: Roboto
+        font-weight: 400
+        font-size: 14px
+        line-height: 16px
+        color: #000000
+        margin-bottom: 18px
+        b
+            display: block
+            margin-bottom: 5px

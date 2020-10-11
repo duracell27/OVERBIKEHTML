@@ -319,6 +319,42 @@ body
         input[type='text']
             width: 85px
 .bicycletype
+    h1
+        font-family: Roboto
+        font-weight: 400
+        font-size: 24px
+        line-height: 28px
+        color: #000000
+        padding-top: 45px
+        margin-bottom: 35px
+        margin-left: 40px
+    .likedsearch
+        display: flex
+        align-items: center
+        .inputsearch
+            position: relative
+            input[type='text']
+                &::-webkit-input-placeholder
+                    font-family: Roboto
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 16px
+                    color: #838383
+                &:focus
+                    &::-webkit-input-placeholder
+                        color: transparent
+                width: 240px
+                height: 40px
+                background-color: transparent
+                border: 1px solid #838383
+                outline: none
+                
+                padding-left: 33px
+            i.fa-search
+                position: absolute
+                top: 14px
+                left: 10px
+                color: #838383
     .selecttype
         position: relative
         display: block
@@ -541,6 +577,62 @@ body
 
 .bicycle
     margin-top: 40px
+    h1
+        font-family: Roboto
+        font-weight: 400
+        font-size: 24px
+        line-height: 28px
+        color: #000000
+        padding-top: 65px
+        margin-bottom: 25px
+        
+    .likedsearch
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin: 20px 0
+        ul
+            margin: 0
+            padding: 0
+            list-style: none
+            li
+                display: inline-block
+                margin-right: 20px
+                
+                a
+                    font-family: Roboto
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 19px
+                    color: #838383
+                    text-decoration: none
+                a.active
+                    color: #000
+                    border-bottom: 2px solid #000
+        .inputsearch
+            position: relative
+            input[type='text']
+                &::-webkit-input-placeholder
+                    font-family: Roboto
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 16px
+                    color: #838383
+                &:focus
+                    &::-webkit-input-placeholder
+                        color: transparent
+                width: 240px
+                height: 40px
+                background-color: transparent
+                border: 1px solid #838383
+                outline: none
+                
+                padding-left: 33px
+            i.fa-search
+                position: absolute
+                top: 14px
+                left: 10px
+                color: #838383
     h2
         font-family: Roboto
         font-size: 20px
@@ -553,8 +645,10 @@ body
         margin-top: 30px
         margin-bottom: 5px
         padding: 0px 10px
-        i.fa-heart
+        i.far
             color: #989898
+        i.fas
+            color: #A366B8
         p
             font-family: Roboto
             font-weight: 400

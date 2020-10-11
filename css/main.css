@@ -352,6 +352,40 @@ body {
   .filters .bicycleprice input[type='text'] {
     width: 85px; }
 
+.bicycletype h1 {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  padding-top: 45px;
+  margin-bottom: 35px;
+  margin-left: 40px; }
+.bicycletype .likedsearch {
+  display: flex;
+  align-items: center; }
+  .bicycletype .likedsearch .inputsearch {
+    position: relative; }
+    .bicycletype .likedsearch .inputsearch input[type='text'] {
+      width: 240px;
+      height: 40px;
+      background-color: transparent;
+      border: 1px solid #838383;
+      outline: none;
+      padding-left: 33px; }
+      .bicycletype .likedsearch .inputsearch input[type='text']::-webkit-input-placeholder {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #838383; }
+      .bicycletype .likedsearch .inputsearch input[type='text']:focus::-webkit-input-placeholder {
+        color: transparent; }
+    .bicycletype .likedsearch .inputsearch i.fa-search {
+      position: absolute;
+      top: 14px;
+      left: 10px;
+      color: #838383; }
 .bicycletype .selecttype {
   position: relative;
   display: block;
@@ -563,6 +597,58 @@ body {
 
 .bicycle {
   margin-top: 40px; }
+  .bicycle h1 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    padding-top: 65px;
+    margin-bottom: 25px; }
+  .bicycle .likedsearch {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0; }
+    .bicycle .likedsearch ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .bicycle .likedsearch ul li {
+        display: inline-block;
+        margin-right: 20px; }
+        .bicycle .likedsearch ul li a {
+          font-family: Roboto;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #838383;
+          text-decoration: none; }
+        .bicycle .likedsearch ul li a.active {
+          color: #000;
+          border-bottom: 2px solid #000; }
+    .bicycle .likedsearch .inputsearch {
+      position: relative; }
+      .bicycle .likedsearch .inputsearch input[type='text'] {
+        width: 240px;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid #838383;
+        outline: none;
+        padding-left: 33px; }
+        .bicycle .likedsearch .inputsearch input[type='text']::-webkit-input-placeholder {
+          font-family: Roboto;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #838383; }
+        .bicycle .likedsearch .inputsearch input[type='text']:focus::-webkit-input-placeholder {
+          color: transparent; }
+      .bicycle .likedsearch .inputsearch i.fa-search {
+        position: absolute;
+        top: 14px;
+        left: 10px;
+        color: #838383; }
   .bicycle h2 {
     font-family: Roboto;
     font-size: 20px;
@@ -575,8 +661,10 @@ body {
     margin-top: 30px;
     margin-bottom: 5px;
     padding: 0px 10px; }
-    .bicycle .geolike i.fa-heart {
+    .bicycle .geolike i.far {
       color: #989898; }
+    .bicycle .geolike i.fas {
+      color: #A366B8; }
     .bicycle .geolike p {
       font-family: Roboto;
       font-weight: 400;

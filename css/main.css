@@ -1417,4 +1417,223 @@ body {
       display: block;
       margin-bottom: 5px; }
 
+.advert {
+  margin-top: 67px; }
+  .advert h1 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    padding-top: 45px;
+    margin-bottom: 35px;
+    margin-left: 40px; }
+  .advert .filter {
+    margin-left: 40px; }
+    .advert .filter ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+      .advert .filter ul li {
+        display: inline-block;
+        margin-right: 20px; }
+        .advert .filter ul li a {
+          font-family: Roboto;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #838383;
+          text-decoration: none; }
+        .advert .filter ul li a.active {
+          color: #000;
+          border-bottom: 2px solid #000; }
+  .advert .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-left: 27px; }
+    .advert .search .inputall {
+      display: flex;
+      align-items: center; }
+      .advert .search .inputall .allcheck {
+        display: none; }
+      .advert .search .inputall .allcheck.active {
+        display: block; }
+        .advert .search .inputall .allcheck.active a {
+          text-decoration: none;
+          color: #A366B8;
+          margin-right: 20px; }
+    .advert .search .inputsearch {
+      position: relative; }
+      .advert .search .inputsearch input[type='text'] {
+        width: 240px;
+        height: 40px;
+        background-color: transparent;
+        border: 1px solid #838383;
+        outline: none;
+        padding-left: 33px; }
+        .advert .search .inputsearch input[type='text']::-webkit-input-placeholder {
+          font-family: Roboto;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #838383; }
+        .advert .search .inputsearch input[type='text']:focus::-webkit-input-placeholder {
+          color: transparent; }
+      .advert .search .inputsearch i.fa-search {
+        position: absolute;
+        top: 14px;
+        left: 10px;
+        color: #838383; }
+    .advert .search input[type='checkbox'] {
+      opacity: 0; }
+    .advert .search .cbx {
+      position: relative;
+      top: 1px;
+      width: 17px;
+      height: 17px;
+      border: 1px solid #c8ccd4;
+      border-radius: 3px;
+      vertical-align: middle;
+      transition: background 0.1s ease;
+      cursor: pointer;
+      margin-right: 30px;
+      margin-bottom: 0; }
+      .advert .search .cbx:after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 5px;
+        width: 5px;
+        height: 11px;
+        opacity: 0;
+        transform: rotate(45deg) scale(0);
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transition: all 0.3s ease;
+        transition-delay: 0.15s; }
+    .advert .search .lbl {
+      margin-right: 10px;
+      margin-bottom: 0; }
+    .advert .search .hidden-xs-up:checked ~ .cbx {
+      border-color: transparent;
+      background: #9871f1; }
+      .advert .search .hidden-xs-up:checked ~ .cbx:after {
+        opacity: 1;
+        transform: rotate(45deg) scale(1); }
+  .advert .advertcard {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; }
+    .advert .advertcard input[type='checkbox'] {
+      opacity: 0; }
+    .advert .advertcard .cbx {
+      position: relative;
+      top: 1px;
+      width: 17px;
+      height: 17px;
+      border: 1px solid #c8ccd4;
+      border-radius: 3px;
+      vertical-align: middle;
+      transition: background 0.1s ease;
+      cursor: pointer;
+      margin-right: 10px; }
+      .advert .advertcard .cbx:after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 5px;
+        width: 5px;
+        height: 11px;
+        opacity: 0;
+        transform: rotate(45deg) scale(0);
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transition: all 0.3s ease;
+        transition-delay: 0.15s; }
+    .advert .advertcard .lbl {
+      width: 100%;
+      display: flex;
+      background-color: #fff;
+      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
+      border-radius: 3px;
+      margin-bottom: 0;
+      padding: 10px; }
+      .advert .advertcard .lbl .advertcarddescription {
+        width: 100%;
+        padding: 5px 30px 5px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .advert .advertcard .lbl .advertcarddescription .head {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start; }
+          .advert .advertcard .lbl .advertcarddescription .head .name p {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            color: #000000;
+            margin-bottom: 0; }
+          .advert .advertcard .lbl .advertcarddescription .head .name span {
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            color: #626262; }
+          .advert .advertcard .lbl .advertcarddescription .head .price {
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #000000; }
+        .advert .advertcard .lbl .advertcarddescription .actions {
+          margin-top: -40px; }
+          .advert .advertcard .lbl .advertcarddescription .actions ul {
+            margin: 0;
+            padding: 0;
+            list-style: none; }
+            .advert .advertcard .lbl .advertcarddescription .actions ul li {
+              margin-right: 35px;
+              display: inline-block;
+              font-family: Roboto;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 16px; }
+              .advert .advertcard .lbl .advertcarddescription .actions ul li a {
+                color: #A366B8; }
+        .advert .advertcard .lbl .advertcarddescription .bottom {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end; }
+          .advert .advertcard .lbl .advertcarddescription .bottom .views {
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+            color: #838383; }
+            .advert .advertcard .lbl .advertcarddescription .bottom .views i.far:last-child {
+              margin-left: 20px; }
+          .advert .advertcard .lbl .advertcarddescription .bottom button {
+            width: 150px;
+            height: 40px;
+            border-radius: 3px;
+            background-color: #B7E9AB;
+            outline: none;
+            border: none;
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 40px;
+            color: #000000; }
+    .advert .advertcard .hidden-xs-up:checked ~ .cbx {
+      border-color: transparent;
+      background: #9871f1; }
+      .advert .advertcard .hidden-xs-up:checked ~ .cbx:after {
+        opacity: 1;
+        transform: rotate(45deg) scale(1); }
+
 /*# sourceMappingURL=main.css.map */

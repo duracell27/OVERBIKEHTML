@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>OverBike</title>
+</head>
+
+<body>
+    <section class="header">
+        <nav class="navbar fixed-top navbar-expand-md navbarMy">
+            <a class="navbar-brand navbar-brandMy" href="#">ЛОГО</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto navbar-navMy">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">МІЙ ПРОФІЛЬ</a>
+                        <div class="profileInfo">
+                            <ul>
+                                <li><img src="img/road.png" alt="profileInfo">
+                                    <p><span>Вдалих покатушок!</span>Олексій Удовенко</p>
+                                </li>
+                                <li>Мої оголошення</li>
+                                <li>Налаштування</li>
+                                <li>Вийти</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ЛАЙКНУТІ </a>
+                        <i class="far fa-heart"></i>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ПОВІДОМЛЕННЯ </a>
+                        <span>12</span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">СТВОРИТИ ОГОЛОШЕННЯ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section class="advert">
+        <div class="container">
+
+            <h1>Мої оголошення</h1>
+            
+            <div class="filter">
+                <ul>
+                    <li><a class="active" href="#">Активні (3)</a></li>
+                    <li><a href="#">Неактивні (0)</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <div class="inputall">
+                    <input class="hidden-xs-up" id="all" type="checkbox" />
+                    <label class="lbl" for="all">Вибрати всі</label>
+                    <label class="cbx" for="all"></label>
+                    <div class="allcheck">
+                        <a href="">Вибрані в топ</a>
+                        <a href="">Деактивувати вибрані</a>
+                    </div>
+                    
+                </div>
+                <div class="inputsearch">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Пошук в моїх оголошеннях">
+                </div>
+                
+            </div>
+
+            <div class="advertcard">
+                <input class="hidden-xs-up" id="cbx1" type="checkbox" />
+                <label class="cbx" for="cbx1"></label>
+                <label class="lbl" for="cbx1"><img src="img/bicycle.png" alt="">
+                <div class="advertcarddescription">
+                    <div class="head">
+                        <div class="name">
+                            <p>Merida viper big nine стан ІДЕАЛ!</p>
+                            <span>Активне до 27 вересня <i class="fas fa-question-circle"></i></span>
+                        </div>
+                        <div class="price">12 400 грн</div>
+                    </div>
+                    <div class="actions">
+                        <ul>
+                            <li><a href="#">Переглянути</a></li>
+                            <li><a href="#">Редагувати</a></li>
+                            <li><a href="#">Деактивувати</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <div class="views"><i class="far fa-eye"></i> 1234 <i class="far fa-heart"></i> 230</div>
+                        <button>В топ за 5 грн/день</button>
+                    </div>
+                </div>
+                </label>
+              </div>
+              <div class="advertcard">
+                <input class="hidden-xs-up" id="cbx2" type="checkbox" />
+                <label class="cbx" for="cbx2"></label>
+                <label class="lbl" for="cbx2"><img src="img/bicycle.png" alt="">
+                <div class="advertcarddescription">
+                    <div class="head">
+                        <div class="name">
+                            <p>Merida viper big nine стан ІДЕАЛ!</p>
+                            <span>Активне до 27 вересня <i class="fas fa-question-circle"></i></span>
+                        </div>
+                        <div class="price">12 400 грн</div>
+                    </div>
+                    <div class="actions">
+                        <ul>
+                            <li><a href="#">Переглянути</a></li>
+                            <li><a href="#">Редагувати</a></li>
+                            <li><a href="#">Деактивувати</a></li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <div class="views"><i class="far fa-eye"></i> 1234 <i class="far fa-heart"></i> 230</div>
+                        <button>В топ за 5 грн/день</button>
+                    </div>
+                </div>
+                </label>
+              </div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://kit.fontawesome.com/ef4238892f.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

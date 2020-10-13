@@ -2068,3 +2068,111 @@ body {
         color: #000000; }
         .anotheruserwrapper .writemessage .phone button i.fa-search {
           margin-right: 10px; }
+
+.settingsavatar {
+  margin-top: 67px; }
+  .settingsavatar h1 {
+    padding-top: 45px;
+    margin-bottom: 35px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000; }
+  .settingsavatar .avatar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px; }
+    .settingsavatar .avatar img {
+      width: 109px;
+      height: 109px;
+      margin-right: 20px;
+      border-radius: 50%; }
+    .settingsavatar .avatar p {
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      color: #000000;
+      margin-bottom: 0; }
+      .settingsavatar .avatar p span {
+        font-family: Roboto;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #A366B8;
+        display: block;
+        margin-top: 3px; }
+
+.settingstiles .settingscard {
+  padding: 30px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 3px; }
+  .settingstiles .settingscard h2 {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #838383; }
+    .settingstiles .settingscard h2 span {
+      font-family: Roboto;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+      margin-left: 20px; }
+  .settingstiles .settingscard button {
+    padding: 12px 29px;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-top: 30px;
+    background-color: #B7E9AB; }
+  .settingstiles .settingscard input[type='text'] {
+    width: 240px;
+    height: 40px;
+    background-color: #F8F8F8;
+    border: 1px solid #EEEEEE;
+    display: block;
+    outline: none;
+    margin-top: 5px;
+    border-radius: 3px;
+    padding-left: 10px; }
+    .settingstiles .settingscard input[type='text']::-webkit-input-placeholder {
+      color: #000; }
+    .settingstiles .settingscard input[type='text']:focus::-webkit-input-placeholder {
+      color: transparent; }
+  .settingstiles .settingscard .debcards__item {
+    background-color: #F8F8F8; }
+  .settingstiles .settingscard .addcard {
+    margin-top: 10px;
+    text-align-last: left;
+    width: 240px;
+    height: 40px;
+    border: 1px solid #A366B8;
+    outline: none;
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 14px;
+    color: #A366B8;
+    background-color: #fff; }
+    .settingstiles .settingscard .addcard i.fa-plus {
+      margin-left: 23px;
+      margin-right: 10px; }

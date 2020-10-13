@@ -55,7 +55,7 @@
         <div class="container">
             <h1>Налаштування профілю</h1>
             <div class="avatar">
-                <img src="img/bicycle.png" alt="ava">
+                <img src="img/hardtail.png" alt="ava">
                 <p>
                     Олексій Удовенко
                     <span>Редагувати ім’я</span></p>
@@ -65,7 +65,46 @@
 
     <section class="settingstiles">
         <div class="container">
-            
+            <div class="row">
+                <div class="col-6">
+                    <div class="settingscard">
+                        <h2>Моя локація</h2>
+                        <input type="text" placeholder="Івано-Франківськ">
+                    </div>
+                    <div class="settingscard">
+                        <h2>Змінити email <span>**********shmidt@gmail.com</span></h2>
+                        <input type="text" placeholder="Новий Email">
+                        <button>Змінити email</button>
+                    </div>
+                    <div class="settingscard">
+                        <h2>Змінити номер телефону <span>+380 ******23 45</span></h2>
+                        <input type="text" placeholder="Новий номер телефону">
+                        <button>Змінити номер телефону</button>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="settingscard">
+                        <h2>Банківська карта</h2>
+                        <div class="debcards">
+                            <div class="debcards__item">
+                                <input type="radio" id="card1" checked name="debcards" value="ropt1">
+                                <label for="card1">Visa ********5645</label>
+                            </div>
+                            <div class="debcards__item">
+                                <input type="radio" id="card2" name="debcards" value="ropt1">
+                                <label for="card2">Visa ********5645</label>
+                            </div>
+                            <button class="addcard"><i class="fas fa-plus"></i>Додати карту</button>
+                        </div>
+                    </div>
+                    <div class="settingscard">
+                        <h2>Змінити пароль</h2>
+                        <input type="text" placeholder="Поточний пароль">
+                        <input type="text" placeholder="Новий пароль">
+                        <button>Змінити пароль</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

@@ -2118,6 +2118,27 @@ body {
   -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
   border-radius: 3px; }
+  .settingstiles .settingscard .wrap {
+    position: relative; }
+    .settingstiles .settingscard .wrap .settingscardhint {
+      position: absolute;
+      z-index: 10;
+      -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12);
+              box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.12); }
+      .settingstiles .settingscard .wrap .settingscardhint ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        border-radius: 3px; }
+        .settingstiles .settingscard .wrap .settingscardhint ul li {
+          width: 240px;
+          height: 40px;
+          background-color: #fff;
+          cursor: pointer;
+          padding-left: 10px;
+          line-height: 40px; }
+          .settingstiles .settingscard .wrap .settingscardhint ul li:hover {
+            background-color: #F4F7F8; }
   .settingstiles .settingscard h2 {
     font-family: Roboto;
     font-weight: 700;
@@ -2160,6 +2181,12 @@ body {
       color: transparent; }
   .settingstiles .settingscard .debcards__item {
     background-color: #F8F8F8; }
+    .settingstiles .settingscard .debcards__item i.fa-times {
+      position: absolute;
+      top: 12px;
+      right: 20px;
+      color: #838383;
+      cursor: pointer; }
   .settingstiles .settingscard .addcard {
     margin-top: 10px;
     text-align-last: left;
@@ -2176,3 +2203,170 @@ body {
     .settingstiles .settingscard .addcard i.fa-plus {
       margin-left: 23px;
       margin-right: 10px; }
+
+.deleteuser p {
+  color: #D74C4C;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer; }
+
+.messages {
+  margin-top: 117px; }
+  .messages .container {
+    background-color: #fff; }
+    .messages .container .row .col-6 {
+      padding-right: 0;
+      padding-left: 0;
+      overflow-x: hidden;
+      border-right: 1px solid #C4C4C4;
+      height: 80vh;
+      max-height: 80vh; }
+      .messages .container .row .col-6 .head {
+        padding: 30px; }
+        .messages .container .row .col-6 .head h1 {
+          font-family: Roboto;
+          font-weight: normal;
+          font-size: 24px;
+          line-height: 28px;
+          color: #000000;
+          margin-bottom: 20px; }
+        .messages .container .row .col-6 .head .inputsearch {
+          position: relative; }
+          .messages .container .row .col-6 .head .inputsearch input[type='text'] {
+            width: 240px;
+            height: 40px;
+            background-color: transparent;
+            border: 1px solid #C4C4C4;
+            outline: none;
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            padding-left: 33px;
+            border-radius: 3px;
+            color: #838383; }
+            .messages .container .row .col-6 .head .inputsearch input[type='text']::-webkit-input-placeholder {
+              color: #838383; }
+            .messages .container .row .col-6 .head .inputsearch input[type='text']:focus::-webkit-input-placeholder {
+              color: transparent; }
+          .messages .container .row .col-6 .head .inputsearch i.fa-search {
+            position: absolute;
+            top: 13px;
+            left: 12px;
+            color: #838383; }
+      .messages .container .row .col-6 .messagecards {
+        padding: 0 30px; }
+        .messages .container .row .col-6 .messagecards__item {
+          position: relative;
+          width: 100%;
+          padding: 18px 0 13px 0; }
+          .messages .container .row .col-6 .messagecards__item::before {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: -50px;
+            width: 150%;
+            border-top: 1px solid #C4C4C4; }
+          .messages .container .row .col-6 .messagecards__item:last-child::after {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: -50px;
+            width: 150%;
+            border-top: 1px solid #C4C4C4; }
+          .messages .container .row .col-6 .messagecards__item p {
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: #000000;
+            margin-bottom: 5px; }
+            .messages .container .row .col-6 .messagecards__item p span {
+              color: #838383; }
+            .messages .container .row .col-6 .messagecards__item p span.online {
+              color: #59AE61; }
+          .messages .container .row .col-6 .messagecards__item i.fa-ellipsis-v {
+            position: absolute;
+            right: 5px;
+            top: 13px;
+            cursor: pointer;
+            padding: 15px; }
+      .messages .container .row .col-6 .user {
+        padding: 7px 0px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start; }
+        .messages .container .row .col-6 .user img {
+          width: 43px;
+          height: 43px;
+          border-radius: 50%;
+          margin-left: 30px; }
+        .messages .container .row .col-6 .user p {
+          font-family: Roboto;
+          font-weight: 500;
+          margin-left: 10px;
+          font-size: 14px;
+          line-height: 16px;
+          color: #000000;
+          margin-bottom: 0; }
+          .messages .container .row .col-6 .user p span {
+            display: block;
+            color: #838383; }
+          .messages .container .row .col-6 .user p span.online {
+            color: #59AE61; }
+      .messages .container .row .col-6 .dialogpart {
+        background-color: #F2F2F2;
+        padding-top: 10px;
+        max-height: 100%;
+        height: calc( 100% - 57px );
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .messages .container .row .col-6 .dialogpart .messageadvert {
+          margin: 0 10px;
+          background-color: #fff;
+          padding: 10px 20px;
+          border-radius: 3px; }
+          .messages .container .row .col-6 .dialogpart .messageadvert p {
+            font-family: Roboto;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 16px;
+            color: #000000;
+            margin-bottom: 0;
+            margin-bottom: 3px; }
+          .messages .container .row .col-6 .dialogpart .messageadvert span {
+            cursor: pointer;
+            font-family: Roboto;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: #A366B8; }
+        .messages .container .row .col-6 .dialogpart .send {
+          margin: 30px; }
+          .messages .container .row .col-6 .dialogpart .send input[type='text'] {
+            border-radius: 3px;
+            width: 100%;
+            height: 40px;
+            outline: none;
+            border: 1px solid #D0D0D0;
+            padding-left: 40px; }
+            .messages .container .row .col-6 .dialogpart .send input[type='text']:focus {
+              padding-left: 10px; }
+              .messages .container .row .col-6 .dialogpart .send input[type='text']:focus::-webkit-input-placeholder {
+                color: transparent; }

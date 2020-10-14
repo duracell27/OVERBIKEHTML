@@ -1950,6 +1950,27 @@ body
         margin-bottom: 30px
         box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.12)
         border-radius: 3px
+        .wrap
+            position: relative
+            .settingscardhint
+                position: absolute
+                z-index: 10
+                box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.12)
+                ul
+                    margin: 0
+                    padding: 0
+                    list-style: none
+                    border-radius: 3px
+                    li
+                        width: 240px
+                        height: 40px
+                        background-color: #fff
+                        cursor: pointer
+                        padding-left: 10px
+                        line-height: 40px
+
+                        &:hover
+                            background-color: #F4F7F8
         h2
             font-family: Roboto
             font-weight: 700
@@ -1994,7 +2015,13 @@ body
         .debcards
             &__item
                 background-color: #F8F8F8
-                
+                i.fa-times
+                    position: absolute
+                    top: 12px
+                    right: 20px
+                    color: #838383
+                    cursor: pointer
+
         .addcard
             margin-top: 10px
             text-align-last: left
@@ -2011,3 +2038,164 @@ body
             i.fa-plus
                 margin-left: 23px
                 margin-right: 10px
+.deleteuser
+    p
+        color: #D74C4C
+        font-family: Roboto
+        font-weight: 400
+        font-size: 16px
+        line-height: 19px
+        cursor: pointer
+.messages
+    
+    margin-top: 117px
+    .container
+        background-color: #fff
+        
+        .row
+
+            .col-6
+                padding-right: 0
+                padding-left: 0
+                overflow-x: hidden
+                border-right: 1px solid #C4C4C4
+                height: 80vh
+                max-height: 80vh
+                .head
+                    padding: 30px
+                    h1
+                        font-family: Roboto
+                        font-weight: normal
+                        font-size: 24px
+                        line-height: 28px
+                        color: #000000
+                        margin-bottom: 20px
+                    .inputsearch
+                        position: relative
+                        input[type='text']
+                            width: 240px
+                            height: 40px
+                            background-color: transparent
+                            border: 1px solid #C4C4C4
+                            outline: none
+                            font-family: Roboto
+                            font-weight: 400
+                            font-size: 14px
+                            line-height: 16px
+                            padding-left: 33px
+                            border-radius: 3px
+                            color: #838383
+                            &::-webkit-input-placeholder
+                                color: #838383
+                            &:focus
+                                &::-webkit-input-placeholder
+                                    color: transparent
+                        i.fa-search
+                            position: absolute
+                            top: 13px
+                            left: 12px
+                            color: #838383
+                .messagecards
+                    padding: 0 30px
+                    &__item
+                        position: relative
+                        width: 100%
+                        padding: 18px 0 13px 0
+                        &::before
+                            position: absolute
+                            content: ''
+                            top: 0
+                            left: -50px
+                            width: 150%
+                            border-top: 1px solid #C4C4C4
+                        &:last-child
+                            &::after
+                                position: absolute
+                                content: ''
+                                bottom: 0
+                                left: -50px
+                                width: 150%
+                                border-top: 1px solid #C4C4C4
+                        p
+                            font-family: Roboto
+                            font-weight: normal
+                            font-size: 14px
+                            line-height: 16px
+                            color: #000000
+                            margin-bottom: 5px
+                            span
+                                color: #838383
+                            span.online
+                                color: #59AE61
+                        i.fa-ellipsis-v
+                            position: absolute
+                            right: 5px
+                            top: 13px
+                            cursor: pointer
+                            padding: 15px
+                .user
+                    padding: 7px 0px
+                    display: flex
+                    align-items: center
+                    justify-content: flex-start
+                    img
+                        width: 43px
+                        height: 43px
+                        border-radius: 50%
+                        margin-left: 30px
+                    p
+                        font-family: Roboto
+                        font-weight: 500
+                        margin-left: 10px
+                        font-size: 14px
+                        line-height: 16px
+                        color: #000000
+                        margin-bottom: 0
+                        span
+                            display: block
+                            color: #838383
+                        span.online
+                            color: #59AE61
+                .dialogpart
+                    background-color: #F2F2F2
+                    padding-top: 10px
+                    max-height: 100%
+                    height: calc( 100% - 57px )
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    .messageadvert
+                        margin: 0 10px
+                        background-color: #fff
+                        padding: 10px 20px
+                        border-radius: 3px
+                        p
+                            font-family: Roboto
+                            font-weight: normal
+                            font-size: 14px
+                            line-height: 16px
+                            color: #000000
+                            margin-bottom: 0
+                            margin-bottom: 3px
+                        span
+                            cursor: pointer
+                            font-family: Roboto
+                            font-weight: 500
+                            font-size: 12px
+                            line-height: 14px
+                            color: #A366B8
+                    .send
+                        
+                        margin: 30px
+                        input[type='text']
+                            border-radius: 3px
+                            width: 100%
+                            height: 40px
+                            outline: none
+                            border: 1px solid #D0D0D0
+                            padding-left: 40px
+                            &:focus
+                                padding-left: 10px
+                                &::-webkit-input-placeholder 
+                                    color: transparent
+                        

@@ -69,7 +69,15 @@
                 <div class="col-6">
                     <div class="settingscard">
                         <h2>Моя локація</h2>
-                        <input type="text" placeholder="Івано-Франківськ">
+                        <div class="wrap">
+                            <input type="text" placeholder="Івано-Франківськ">
+                            <div class="settingscardhint">
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                        
                     </div>
                     <div class="settingscard">
                         <h2>Змінити email <span>**********shmidt@gmail.com</span></h2>
@@ -89,10 +97,12 @@
                             <div class="debcards__item">
                                 <input type="radio" id="card1" checked name="debcards" value="ropt1">
                                 <label for="card1">Visa ********5645</label>
+                                <i class="fas fa-times"></i>
                             </div>
                             <div class="debcards__item">
                                 <input type="radio" id="card2" name="debcards" value="ropt1">
                                 <label for="card2">Visa ********5645</label>
+                                <i class="fas fa-times"></i>
                             </div>
                             <button class="addcard"><i class="fas fa-plus"></i>Додати карту</button>
                         </div>
@@ -104,6 +114,9 @@
                         <button>Змінити пароль</button>
                     </div>
                 </div>
+            </div>
+            <div class="deleteuser">
+                <p>Видалити обліковий запис</p>
             </div>
         </div>
     </section>
